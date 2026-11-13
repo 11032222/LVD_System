@@ -1,0 +1,249 @@
+/* [AI-MOD 2026-11-12] 设计系统：浅色简洁 —— 白底卡片 + 深蓝主色 + 大留白 */
+:root {
+  --rs-bg: #f4f6fa;
+  --rs-surface: #ffffff;
+  --rs-surface-2: #fafbfd;
+  --rs-line: #e6ebf3;
+  --rs-line-strong: #d6dfec;
+  --rs-text: #16202e;
+  --rs-text-2: #55637a;
+  --rs-text-3: #8d99ac;
+  --rs-primary: #1f4e8c;
+  --rs-primary-2: #2f6fbf;
+  --rs-primary-soft: #eaf1fb;
+  --rs-danger: #d9534f;
+  --rs-warn: #e8833a;
+  --rs-ok: #2f9e73;
+  --rs-radius: 14px;
+  --rs-shadow: 0 1px 2px rgba(22, 32, 46, 0.04), 0 8px 24px rgba(22, 32, 46, 0.05);
+
+  --el-color-primary: #1f4e8c;
+  --el-color-primary-light-3: #4d78ac;
+  --el-color-primary-light-5: #7d9cc4;
+  --el-color-primary-light-7: #b3c6dd;
+  --el-color-primary-light-8: #cddaea;
+  --el-color-primary-light-9: #eaf1fb;
+  --el-color-success: #2f9e73;
+  --el-color-warning: #e8833a;
+  --el-color-danger: #d9534f;
+  --el-border-radius-base: 8px;
+  --el-font-family: inherit;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--rs-bg);
+  color: var(--rs-text);
+  font-family: 'Inter', 'PingFang SC', 'Microsoft YaHei', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--rs-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--rs-primary-2);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+/* ------------------------------------------------------------------ 布局 */
+.page {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 32px 40px 64px;
+}
+
+.page-wide {
+  max-width: 100%;
+}
+
+.page-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.page-title {
+  font-size: 24px;
+  line-height: 1.3;
+}
+
+.page-sub {
+  margin-top: 6px;
+  color: var(--rs-text-2);
+  font-size: 13px;
+}
+
+.card {
+  background: var(--rs-surface);
+  border: 1px solid var(--rs-line);
+  border-radius: var(--rs-radius);
+  box-shadow: var(--rs-shadow);
+}
+
+.card-pad {
+  padding: 24px 26px;
+}
+
+.card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 26px;
+  border-bottom: 1px solid var(--rs-line);
+}
+
+.card-title {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.card-hint {
+  color: var(--rs-text-3);
+  font-size: 12px;
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.muted {
+  color: var(--rs-text-3);
+}
+
+.mono {
+  font-family: 'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
+  font-size: 12px;
+}
+
+.divider {
+  height: 1px;
+  background: var(--rs-line);
+  margin: 20px 0;
+}
+
+/* 键值对 */
+.kv {
+  display: grid;
+  grid-template-columns: 92px 1fr;
+  gap: 8px 16px;
+  font-size: 13px;
+}
+
+.kv dt {
+  color: var(--rs-text-3);
+}
+
+.kv dd {
+  margin: 0;
+  color: var(--rs-text);
+  word-break: break-all;
+}
+
+/* 小标签 */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 24px;
+  padding: 0 10px;
+  border-radius: 999px;
+  background: var(--rs-primary-soft);
+  color: var(--rs-primary);
+  font-size: 12px;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.chip-ghost {
+  background: #f1f4f9;
+  color: var(--rs-text-2);
+}
+
+.chip-danger {
+  background: #fdeeee;
+  color: var(--rs-danger);
+}
+
+.chip-ok {
+  background: #eaf6f0;
+  color: var(--rs-ok);
+}
+
+/* Element Plus 微调 */
+.el-table {
+  --el-table-border-color: var(--rs-line);
+  --el-table-header-bg-color: #f8fafc;
+  --el-table-header-text-color: var(--rs-text-2);
+  --el-table-row-hover-bg-color: #f7faff;
+  font-size: 13px;
+}
+
+.el-table th.el-table__cell {
+  font-weight: 500;
+}
+
+.el-card {
+  --el-card-border-color: var(--rs-line);
+  --el-card-border-radius: var(--rs-radius);
+}
+
+.el-button {
+  font-weight: 500;
+}
+
+.el-form-item__label {
+  color: var(--rs-text-2);
+  font-size: 13px;
+}
+
+.section-gap {
+  height: 20px;
+}
+
+/* 滚动条 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d7deea;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}

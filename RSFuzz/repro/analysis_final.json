@@ -1,0 +1,303 @@
+{
+  "A1_s4": {
+    "algo": "A1",
+    "size": 4,
+    "ctime_median": 38.46824550628662,
+    "ctime_n": 27,
+    "modes": {
+      "na": {
+        "n": 40,
+        "nfail": 13,
+        "failure": 32.5,
+        "reasons": {
+          "wall": 9,
+          "ok": 27,
+          "collision": 4
+        },
+        "wall_median": 36.63,
+        "wall_max": 45.38,
+        "ncrashed": 13,
+        "ntimeout": 0
+      },
+      "sa": {
+        "n": 40,
+        "nfail": 40,
+        "failure": 100.0,
+        "reasons": {
+          "wall": 20,
+          "timeout": 18,
+          "collision": 2
+        },
+        "wall_median": 1611.35,
+        "wall_max": 2400.09,
+        "ncrashed": 22,
+        "ntimeout": 18,
+        "mcnemar": {
+          "paired": 40,
+          "base_ok_atk_fail": 27,
+          "base_fail_atk_ok": 0,
+          "p": 1.4901161193847656e-08
+        }
+      },
+      "ma": {
+        "n": 40,
+        "nfail": 35,
+        "failure": 87.5,
+        "reasons": {
+          "wall": 35,
+          "ok": 5
+        },
+        "wall_median": 190.24,
+        "wall_max": 646.99,
+        "ncrashed": 35,
+        "ntimeout": 0,
+        "mcnemar": {
+          "paired": 40,
+          "base_ok_atk_fail": 22,
+          "base_fail_atk_ok": 0,
+          "p": 4.76837158203125e-07
+        }
+      }
+    }
+  },
+  "A2_s10": {
+    "algo": "A2",
+    "size": 10,
+    "ctime_median": 220.5,
+    "ctime_n": 69,
+    "modes": {
+      "na": {
+        "n": 100,
+        "nfail": 31,
+        "failure": 31.0,
+        "reasons": {
+          "crash": 31,
+          "ok": 69
+        },
+        "wall_median": 5.1,
+        "wall_max": 18.63,
+        "ncrashed": 31,
+        "ntimeout": 0
+      },
+      "sa": {
+        "n": 100,
+        "nfail": 90,
+        "failure": 90.0,
+        "reasons": {
+          "crash": 90,
+          "ok": 10
+        },
+        "wall_median": 20.4,
+        "wall_max": 212,
+        "ncrashed": 90,
+        "ntimeout": 0,
+        "mcnemar": {
+          "paired": 100,
+          "base_ok_atk_fail": 60,
+          "base_fail_atk_ok": 1,
+          "p": 5.377642775528102e-17
+        }
+      },
+      "ma": {
+        "n": 100,
+        "nfail": 58,
+        "failure": 58.0,
+        "reasons": {
+          "crash": 56,
+          "ok": 42,
+          "timeout": 2
+        },
+        "wall_median": 14.97,
+        "wall_max": 44.76,
+        "ncrashed": 56,
+        "ntimeout": 2,
+        "mcnemar": {
+          "paired": 100,
+          "base_ok_atk_fail": 39,
+          "base_fail_atk_ok": 12,
+          "p": 0.0001980394513374506
+        }
+      }
+    }
+  },
+  "A2_s20": {
+    "algo": "A2",
+    "size": 20,
+    "ctime_median": 118.0,
+    "ctime_n": 61,
+    "modes": {
+      "na": {
+        "n": 100,
+        "nfail": 39,
+        "failure": 39.0,
+        "reasons": {
+          "crash": 39,
+          "ok": 61
+        },
+        "wall_median": 4.28,
+        "wall_max": 12.75,
+        "ncrashed": 39,
+        "ntimeout": 0
+      },
+      "sa": {
+        "n": 100,
+        "nfail": 73,
+        "failure": 73.0,
+        "reasons": {
+          "crash": 73,
+          "ok": 27
+        },
+        "wall_median": 77.18,
+        "wall_max": 285.73,
+        "ncrashed": 73,
+        "ntimeout": 0,
+        "mcnemar": {
+          "paired": 100,
+          "base_ok_atk_fail": 45,
+          "base_fail_atk_ok": 11,
+          "p": 5.37831811014966e-06
+        }
+      },
+      "ma": {
+        "n": 100,
+        "nfail": 44,
+        "failure": 44.0,
+        "reasons": {
+          "crash": 43,
+          "ok": 56,
+          "timeout": 1
+        },
+        "wall_median": 17.36,
+        "wall_max": 47.48,
+        "ncrashed": 43,
+        "ntimeout": 1,
+        "mcnemar": {
+          "paired": 100,
+          "base_ok_atk_fail": 31,
+          "base_fail_atk_ok": 26,
+          "p": 0.5966417603730826
+        }
+      }
+    }
+  },
+  "A3_s6": {
+    "algo": "A3",
+    "size": 6,
+    "ctime_median": 10.4,
+    "ctime_n": 86,
+    "modes": {
+      "na": {
+        "n": 100,
+        "nfail": 14,
+        "failure": 14.0,
+        "reasons": {
+          "ok": 86,
+          "crash": 14
+        },
+        "wall_median": 0.26,
+        "wall_max": 1.45,
+        "ncrashed": 14,
+        "ntimeout": 0
+      },
+      "sa": {
+        "n": 100,
+        "nfail": 21,
+        "failure": 21.0,
+        "reasons": {
+          "ok": 79,
+          "crash": 20,
+          "other": 1
+        },
+        "wall_median": 67.38,
+        "wall_max": 95.64,
+        "ncrashed": 20,
+        "ntimeout": 0,
+        "mcnemar": {
+          "paired": 100,
+          "base_ok_atk_fail": 10,
+          "base_fail_atk_ok": 3,
+          "p": 0.09228515625
+        }
+      },
+      "ma": {
+        "n": 100,
+        "nfail": 21,
+        "failure": 21.0,
+        "reasons": {
+          "ok": 79,
+          "crash": 21
+        },
+        "wall_median": 61.55,
+        "wall_max": 81.06,
+        "ncrashed": 21,
+        "ntimeout": 0,
+        "mcnemar": {
+          "paired": 100,
+          "base_ok_atk_fail": 10,
+          "base_fail_atk_ok": 3,
+          "p": 0.09228515625
+        }
+      }
+    }
+  },
+  "A3_s10": {
+    "algo": "A3",
+    "size": 10,
+    "ctime_median": 11.0,
+    "ctime_n": 70,
+    "modes": {
+      "na": {
+        "n": 100,
+        "nfail": 30,
+        "failure": 30.0,
+        "reasons": {
+          "ok": 70,
+          "crash": 30
+        },
+        "wall_median": 1.07,
+        "wall_max": 2.16,
+        "ncrashed": 30,
+        "ntimeout": 0
+      },
+      "sa": {
+        "n": 100,
+        "nfail": 34,
+        "failure": 34.0,
+        "reasons": {
+          "ok": 66,
+          "crash": 31,
+          "other": 3
+        },
+        "wall_median": 118.73,
+        "wall_max": 159.13,
+        "ncrashed": 31,
+        "ntimeout": 0,
+        "mcnemar": {
+          "paired": 100,
+          "base_ok_atk_fail": 14,
+          "base_fail_atk_ok": 10,
+          "p": 0.5412561893463135
+        }
+      },
+      "ma": {
+        "n": 100,
+        "nfail": 37,
+        "failure": 37.0,
+        "reasons": {
+          "crash": 37,
+          "ok": 63
+        },
+        "wall_median": 112.43,
+        "wall_max": 161.82,
+        "ncrashed": 37,
+        "ntimeout": 0,
+        "mcnemar": {
+          "paired": 100,
+          "base_ok_atk_fail": 16,
+          "base_fail_atk_ok": 9,
+          "p": 0.2295229434967041
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+# ============================================================
+# LVD System 仓库忽略规则
+# 原则：只提交源码、SQL、配置模板与实验脚本；
+#       运行产物、日志、模型文件、大体积媒体与本机配置一律不入库。
+# ============================================================
+
+# ---------- 系统 ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+_local_backup/
+
+# ---------- 编辑器 / IDE ----------
+.vscode/
+.idea/
+.trae/
+.trae-html-share-packages/
+.screenshots/
+
+# ---------- 敏感信息（数据库口令、证书、私钥） ----------
+.env
+.env.local
+*.p12
+*.pem
+*.key
+*.pfx
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# ---------- Node ----------
+node_modules/
+dist/
+dist-ssr/
+coverage/
+*.timestamp-*-*.mjs
+
+# 工作区根部的空 lock 文件（真正的依赖锁在 web/LVD_System 下）
+web/package-lock.json
+
+# ---------- 日志 ----------
+logs/
+**/log_file/
+*.log
+*.log.*
+
+# ---------- 运行产物 ----------
+Result/
+RSFuzz/repro/runs*/
+RSFuzz/repro/work*/
+RSFuzz/repro/det*/
+RSFuzz/repro/prefs/
+RSFuzz/repro/logs/
+RSFuzz/**/data_collection/attack_res/
+
+# ---------- 大体积媒体 / 样本 ----------
+*.avi
+*.mkv
+*.mp4
+*.gif
+*.zip
+*.pptx
+*.pdf
+RSFuzz/Adaptive Swarm/adaptive_swarm/figures/
+
+# ---------- 根目录过程性文件 ----------
+rsfuzz-*.html
+fastplanner+rsfuzz.pptx
+代码细节.png
+数据库设计*.png
+新建*
+统一配置说明.md

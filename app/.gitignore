@@ -1,0 +1,15 @@
+# 本地配置（含数据库密码）
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+
+# 运行产物
+logs/
+tmp/
+*.log
